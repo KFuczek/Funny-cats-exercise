@@ -1,0 +1,73 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.images_panorama {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img_container {
+  display: flex;
+  max-width: min(30%, 300px);
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_container img {
+  padding: 3px;
+  object-fit: contain;
+  aspect-ratio: 1;
+  border: solid black 3px;
+  width: 100%;
+}
+
+.img_container button {
+  background-color: #ea4c89;
+  padding: 5px min(6vw, 70px);
+  border-radius: 8px;
+  margin-top: 10px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+}
+
+.img_container button:hover {
+  background-color: #f082ac;
+}
+
+.reload_button {
+  color: blue;
+}
+
+.render_label {
+  margin: 5px;
+}
+
+.task_content h1 {
+  font-size: clamp(26px, 10vw, 100px);
+  text-shadow: 1px 1px 1px red, 2px 2px 1px red;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.task_content p {
+  font-size: clamp(16px, 4vw, 30px);
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
